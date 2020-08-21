@@ -1,0 +1,9 @@
+ackerman:
+    joint_state_controller:
+        type: joint_state_controller/JointStateController
+        publish_rate: 50  
+# Position Controller -----------------------------------
+    remove_controller:
+        type: position_controllers/JointPositionController
+        joint: slide_joint
+        pid: {p: 100.0, i: 0.01, d: 0.0}
